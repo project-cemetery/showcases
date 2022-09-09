@@ -87,20 +87,24 @@ function App() {
         });
       });
 
-      node((messagesRef) => {
-        const scrollIntoViewFx = createEffect(() => {
-          messagesRef.lastElementChild?.scrollIntoView({
-            behavior: "smooth",
-            block: "end",
-            inline: "nearest",
-          });
-        });
+      const newMessagesRef = createEvent();
+      const $messagesRef = restore(newMessagesRef, null);
 
-        sample({
-          clock: $messages,
-          target: scrollIntoViewFx,
+      const scrollIntoViewFx = createEffect((messagesRef) => {
+        messagesRef?.lastElementChild?.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "nearest",
         });
       });
+
+      sample({
+        clock: $messages,
+        source: $messagesRef,
+        target: scrollIntoViewFx,
+      });
+
+      node(newMessagesRef);
     });
   });
 }
