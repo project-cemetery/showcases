@@ -12,5 +12,5 @@ Create a simple UI that shows messages from a socket, scroll to the last message
 
 [Source](https://www.youtube.com/watch?v=uqII0AOW1NM&list=WL)
 
-- [React-version](./apps/simple-chat-react/): `pnpm simple-chat:react`
-- [Solid-version](./apps/simple-chat-solid/): `pnpm simple-chat:solid`
+- [React-version](./apps/simple-chat-react/main.jsx): `pnpm simple-chat:react`
+- [Solid-version](./apps/simple-chat-solid/main.jsx): `pnpm simple-chat:solid`
