@@ -1,0 +1,17 @@
+{
+  "name": "apps-simple-chat-solid",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite"
+  },
+  "devDependencies": {
+    "babel-preset-solid": "^1.5.4",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "effector-solid": "^0.22.3",
+    "solid-js": "^1.5.4"
+  }
+}
