@@ -7,7 +7,7 @@ import {
   $currentMessage,
   currentMessageChanged,
   messageSent,
-} from "../../libs/simple-chat";
+} from "../../models/simple-chat";
 import "./index.css";
 
 function App() {

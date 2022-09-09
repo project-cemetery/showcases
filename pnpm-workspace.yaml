@@ -1,4 +1,4 @@
 packages:
-  - "libs/*"
+  - "models/*"
   - "apps/*"
   - "apis/*"
