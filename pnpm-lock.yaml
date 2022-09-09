@@ -25,6 +25,15 @@ importers:
     dependencies:
       websocket: 1.0.34
 
+  apps/simple-chat-forest:
+    specifiers:
+      forest: ^0.21.2
+      vite: ^3.1.0
+    dependencies:
+      forest: 0.21.2
+    devDependencies:
+      vite: 3.1.0
+
   apps/simple-chat-react:
     specifiers:
       '@types/react': ^18.0.17
@@ -1072,6 +1081,13 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
     dev: true
+
+  /forest/0.21.2:
+    resolution: {integrity: sha512-NV16mpZHZn/C23dGAOL0lUjjYIfo/k1hAH8awPINuT7+aME41DGV0idUf9f9jNPukD1ldgIVG0LHVuAEy28zyg==}
+    engines: {node: '>=11.0.0'}
+    peerDependencies:
+      effector: ^22.3.0
+    dev: false
 
   /fraction.js/4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}

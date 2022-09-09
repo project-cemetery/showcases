@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "simple-chat:react": "turbo run start --filter=./apis/simple-chat --filter=./apps/simple-chat-react",
-    "simple-chat:solid": "turbo run start --filter=./apis/simple-chat --filter=./apps/simple-chat-solid"
+    "simple-chat:solid": "turbo run start --filter=./apis/simple-chat --filter=./apps/simple-chat-solid",
+    "simple-chat:forest": "turbo run start --filter=./apis/simple-chat --filter=./apps/simple-chat-forest"
   },
   "keywords": [],
   "author": "",
