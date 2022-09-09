@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "lint": "turbo run lint",
-    "dev": "turbo run dev"
+    "simple-chat:react": "turbo run start --filter=./apis/simple-chat --filter=./apps/simple-chat-react",
+    "simple-chat:solid": "turbo run start --filter=./apis/simple-chat --filter=./apps/simple-chat-solid"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "turbo": "^1.4.6"
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "turbo": "^1.4.6",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "effector": "^22.3.0"
   }
 }
